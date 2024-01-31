@@ -257,6 +257,19 @@ span {
   }
 
 }
+
+.heading {
+  text-align:center; 
+  font-size: 8rem;
+  transition: 0.3s ease;
+
+}
+
+.heading_text {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2;
+}
   
 
 
