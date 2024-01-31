@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="style/style.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="style/style.css" rel="stylesheet" />
 
-    <title>Document</title>
-</head>
-<body>
-    <header>
- <div class="portfolio-container">
-    <div class="portfolio-row header-wrap">
-        <div class="brand_name">
-            <a href="#" class="logo">Sarah</a>
-        </div>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo"><span>Sarah</span></a>
 
-  <div class="portfolio-navbar">
-    <ul>
-        <li>
-            <a href="#about" class="navbar-link">Home</a>
-        </li>
-        <li>
-            <a href="#aboutme" class="navbar-link">About</a>
-        </li>
-        <li>
-            <a href="#skils" class="navbar-link">Skills</a>
-        </li>
-        <li>
-            <a href="#project" class="navbar-link">Projects</a>
-        </li>
-        <li>
-            <a href="#contactme" class="navbar-link">Contact me</a>
-        </li>
-    </ul>
-  </div>      
-     <div class="navbar-toggle">
-        <i class="lni lni-grid-alt"></i>
-     </div>
-    </div>
- </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Education">Education</a>
+        <a href="#Contact">Contact</a>
+      </nav>
     </header>
 
-    <section id="about me">
-        <div class="portfolio-container">
-            <div class="portfolio-row about-content">
-                <div class="about-intro">
-                    <div class="about-text">
-                        <h1>👋🏻 Hey there, <br>
-                            It's Sarah
-                        </h1>
-                        <h3>Junior Web Developper</h3>
-                        <p><strong>Developpeuse en herbe</strong>, passionée et motivée</p>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="img/portfolioniji2.png" alt="profile">
-                </div>
-            
-            </div>
+    <section class="home" id="home">
+      <div class="home_img">
+        <img src="img/portfolioniji2.png" alt="" />
+      </div>
+
+      <div class="home_content">
+        <h3>Hi</h3>
+        <h1>It's <span>Sarah</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <div class="socials-icons">
+          <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+          <a href="#"> <i class="bx bxl-github"></i></a>
+         
         </div>
+
+        <a href="#" class="btn">Contact</a>
+      </div>
     </section>
 
-
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
