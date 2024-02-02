@@ -52,6 +52,7 @@ body {
   transition: 0.3s ease;
 }
 
+
 .logo:hover {
   transform: scale(1.1);
 }
@@ -262,6 +263,7 @@ span {
   text-align:center; 
   font-size: 8rem;
   transition: 0.3s ease;
+  padding-bottom: 5rem;
 
 }
 
@@ -270,7 +272,54 @@ span {
   font-size: 2rem;
   line-height: 2;
 }
-  
+
+.projects {
+  background-color: var(--second-bg-color); 
+
+}
+
+.projects h3  {
+  margin-bottom: 8rem;
+}
+
+.projects-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+}
+
+.projects-container .projects-box {
+  flex: 1 1 40rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:var(--main-color);
+  padding: 3rem 2rem 4rem; 
+  height: 550px; 
+  border-radius: 2rem; 
+  border: 3px solid transparent; 
+  cursor: pointer; 
+  transition: 0.5s; 
+}
+
+.projects-container .projects-box:hover {
+  transform: scale(1.02); 
+  background-color: lightgoldenrodyellow; 
+  color:#ca8a46;
+}
+
+.projects-box i {
+ font-size: 7rem; 
+ color: var(--text-color);
+}
+
+
+
 
 
 
