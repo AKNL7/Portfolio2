@@ -27,11 +27,17 @@ let navLinks = document.querySelectorAll('header nav a');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
-    navbar.style.display = 'block';
+    navbar.classList.toggle('active');
 
 }
 
-navbar.addEventListener("focusout" ,() => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.style.display = 'none';
-})
+document.addEventListener('click', function(event) {
+    // Check if the clicked element is not part of the navbar
+    if  (!menuIcon.contains(event.target) && !navbar.contains(event.target)) {
+    //   If not, close the navbar (hide it)
+    //   navbar.style.display = 'none';
+        navbar.classList.remove('active');
+        menuIcon.classList.toggle('bx-x');
+
+    }
+  });
