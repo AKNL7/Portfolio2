@@ -236,9 +236,17 @@ span {
 
 .heading_text {
   text-align: center;
-  font-size: 2rem;
-  line-height: 2;
-  color: var(--text-color)
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.heading_text1 {
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  padding-top: 25px;
 }
 
 .about {
@@ -251,9 +259,31 @@ span {
 
 }
 
+.neon_text {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #CF91D8,
+    0 0 10px #CF91D8,
+    0 0 21px #CF91D8,
+    0 0 42px #CF91D8,
+    0 0 82px #CF91D8,
+    0 0 92px #CF91D8,
+    0 0 102px #CF91D8,
+    0 0 151px #CF91D8;
+    text-shadow: [x-offset] [y-offset] [blur-radius] [color];
+}
+
+
+
 /* button cv */
 .cv {
-  margin-top: 8%;
+  margin-top: 5%;
 }
  a .button {
   cursor: pointer;
@@ -504,6 +534,93 @@ ul {
   }
 }
 
+
+
+
+
+/**
+ * Paper Plane
+ */
+/*Paper Plane: Container*/
+.plane-container {
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+}
+ /*Paper Plane: Image*/
+.plane {
+  width: 100%;
+  height: 60px;
+}
+
+/*Paper Plane: Animation*/
+.plane-container {
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+
+
 .footer {
   position: relative;
   bottom: 0;
@@ -648,7 +765,7 @@ ul {
     flex-direction: column;
     margin: 4rem 5rem;
 
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 2rem 3%;
   }
 
@@ -679,16 +796,26 @@ ul {
 }
 
 @media (max-width: 700px) {
+  
   .skills-container > div {
     display:flex; 
     justify-content: center;
+   
 
   }
 
   .skills-container > div > ul {
     flex-direction: column;
-    gap:5px
+    gap:10px;
 
 
   }
+
+  .contact > .content {
+
+    width: fit-content;
+  }
+
+  
+  
 }
