@@ -819,3 +819,17 @@ ul {
   
   
 }
+
+/* Existing CSS code */
+
+/* Add the following CSS for responsiveness and removing hover effect on phones */
+
+/* Media query for phones */
+@media (max-width: 700px) {
+  /* Remove hover effect on project cards */
+  .projects-container .projects-box:hover {
+    transform: none;
+    background-color: var(--main-color);
+    color: var(--text-color);
+  }
+}
