@@ -193,6 +193,7 @@ span {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  will-change: transform;
   background-repeat: no-repeat;
   background-size: 80%;
   animation: shine 5s linear infinite;
@@ -219,7 +220,7 @@ span {
 }
 
 .heading_box {
-  width: 70%;
+  width: 99%;
   background: rgba(217, 217, 217, 0.175);
   border: 1px solid rgba(217, 217, 217, 0.8);
   padding: 4%;
@@ -746,7 +747,12 @@ ul {
     background: var(--second-bg-color);
     border-top: 3px solid var(--main-color) ;
     display: none;
+
+    /* blur with supports */
     backdrop-filter: blur(10px);
+    will-change: transform;
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
   }
 
@@ -795,7 +801,7 @@ ul {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 35em) {
   
   .skills-container > div {
     display:flex; 
@@ -807,29 +813,26 @@ ul {
   .skills-container > div > ul {
     flex-direction: column;
     gap:10px;
-
-
+    
+    
   }
-
+  
   .contact > .content {
-
+    
     width: fit-content;
   }
 
-  
-  
-}
+  .contact > .content h2 {
+    font-size: 3em;
+  }
 
-/* Existing CSS code */
-
-/* Add the following CSS for responsiveness and removing hover effect on phones */
-
-/* Media query for phones */
-@media (max-width: 700px) {
-  /* Remove hover effect on project cards */
-  .projects-container .projects-box:hover {
-    transform: none;
-    background-color: var(--main-color);
+  .projects-container {
     color: var(--text-color);
   }
+  .noHover {
+    pointer-events: none;
+  }
+  
+  
+  
 }
