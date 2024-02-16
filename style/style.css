@@ -833,6 +833,11 @@ ul {
     pointer-events: none;
   }
   
+  .home_img  img {
+    width:70%;
+    height: auto;
+
+  }
   
   
 }
