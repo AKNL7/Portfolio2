@@ -829,9 +829,7 @@ ul {
   .projects-container {
     color: var(--text-color);
   }
-  .noHover {
-    pointer-events: none;
-  }
+ 
   
   .home_img {
     display: flex; 
@@ -845,6 +843,11 @@ ul {
     width:80%;
     height: auto;
 
+  }
+
+  .projects-container .projects-box {
+    background: #FFDCE1;
+    color: var(--text-color);
   }
   
   
