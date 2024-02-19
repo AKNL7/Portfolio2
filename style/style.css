@@ -833,8 +833,15 @@ ul {
     pointer-events: none;
   }
   
+  .home_img {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+  
+  }
+  
   .home_img  img {
-    width:70%;
+    width:80%;
     height: auto;
 
   }
