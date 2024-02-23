@@ -839,15 +839,23 @@ ul {
   
   }
   
+  .home_img {
+     margin-top: 60px;
+  }
+  
   .home_img  img {
     width:80%;
     height: auto;
+   
 
   }
 
   .projects-container .projects-box {
     background: #DD93C2;
     color: var(--text-color);
+    width: 30rem;
+    height: 40rem;
+    
   }
   
   
