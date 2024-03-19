@@ -221,7 +221,7 @@ span {
 }
 
 .heading_box {
-  width: 99%;
+  width: 80%;
   background: rgba(217, 217, 217, 0.175);
   border: 1px solid rgba(217, 217, 217, 0.8);
   padding: 4%;
@@ -363,7 +363,7 @@ a .button {
 }
 
 .projects-box p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 1rem 0 3rem;
 
 }
@@ -858,6 +858,7 @@ ul {
   .home_img img {
     width: 80%;
     height: auto;
+    
 
 
   }
