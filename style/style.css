@@ -219,9 +219,12 @@ span {
 
 
 }
+.heading-square {
+  width:80%;
+}
 
 .heading_box {
-  width: 80%;
+  /* width: 80%; */
   background: rgba(217, 217, 217, 0.175);
   border: 1px solid rgba(217, 217, 217, 0.8);
   padding: 4%;
