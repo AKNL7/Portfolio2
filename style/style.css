@@ -718,6 +718,11 @@ ul {
     margin: 0 5rem;
 
   }
+
+  .projects-box {
+    /* width : 20rem; */
+    height: 50px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -739,6 +744,8 @@ ul {
   .footer {
     padding: 2rem 3%;
   }
+
+
 
 }
 
